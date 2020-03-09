@@ -35,6 +35,8 @@ enum class Color(val rgb: Int) {
 ```
 </div>
 
+Enum constants are initialized before the companion object is initialized, therefore cunstructors or `init` blocks cannot access members of the companion object.
+
 ## Anonymous Classes
 
 Enum constants can also declare their own anonymous classes with their corresponding methods, as well as overriding base methods.
